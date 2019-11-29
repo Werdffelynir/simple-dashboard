@@ -54,8 +54,7 @@
     import {GET_USER} from '../../store/Profile/getters';
     import StringGenerate from '../../util/StringGenerate';
 
-
-    const socket = io.connect('http://simple-dashboard.loc:3000');
+    const socket = io.connect('http://simple-dashboard.loc:3000', {reconnect: true});
 
     export default {
         template: '#messenger-template',
@@ -65,6 +64,7 @@
             console.log('Component "Messenger" mounted.')
         },
         data() {
+
             socket.on('chat', (messages) => {
                 messages['color'] = StringGenerate.toHex(messages['name']);
                 this.messages.push(messages);
@@ -74,6 +74,7 @@
                     chat.scrollTo(0, chat.scrollHeight);
                 }, 500);
             });
+
             return {
                 message: '',
                 messages: [],
@@ -86,7 +87,7 @@
         },
         methods: {
             send () {
-                if (this.message.length > 2) {
+                if (this.message.length) {
                     socket.emit('chat', {name: this.user.name, message: this.message});
                     this.message = '';
                 }

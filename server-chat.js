@@ -1,7 +1,10 @@
 const app = require('express')();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
-const chatSession = [];
+const chatSession = [{
+    name: '[Server]',
+    message: 'Server started ' + (new Date()).getDate()
+}];
 
 io.on('connection', function(socket) {
     console.log('a user connected');
