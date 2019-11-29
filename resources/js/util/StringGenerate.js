@@ -23,4 +23,24 @@ export default class StringGenerate {
     static RGB() {
         return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     }
+
+    static toHex(string) {
+        let i,
+            hash = 0,
+            color = '#';
+
+        if (string.length === 0) return hash;
+
+        [...string].forEach((char, i) => {
+            hash = char.charCodeAt(0) + ((hash << 5) - hash);
+            hash = hash & hash;
+        });
+
+        for (i = 0; i < 3; i++) {
+            color += ('00' + ((hash >> (i * 8)) & 255).toString(16)).substr(-2);
+        }
+
+        return color;
+    }
+
 }

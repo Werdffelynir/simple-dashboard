@@ -8,8 +8,9 @@ io.on('connection', function(socket) {
 
     socket.on('chat', function(message){
         if (message) {
+            message.time = (new Date()).getTime();
             chatSession.push(message);
-            io.emit('chat', chatSession);
+            io.emit('chat', message);
         }
     });
 

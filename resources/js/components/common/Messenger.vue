@@ -2,9 +2,10 @@
 
     <VCard dark max-width="800" class="auth-form m-auto">
 
-        <div class="chat">
+        <div class="chat" >
             <span v-for="chat in this.messages">
-                <strong>{{chat.name}}: </strong> {{chat.message}}
+                 <span class="avatar" v-bind:style="{ background: chat.color }"></span>
+                 <strong>{{chat.name}}: </strong> {{chat.message}}
             </span>
         </div>
 
@@ -32,6 +33,12 @@
     .chat span {
         display: block;
     }
+    .chat .avatar {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
     .chat {
         max-height: 30vh;
         min-height: 30vh;
@@ -45,6 +52,7 @@
     import io from 'socket.io-client';
     import {getterWithModule} from '../../store/getterWith';
     import {GET_USER} from '../../store/Profile/getters';
+    import StringGenerate from '../../util/StringGenerate';
 
 
     const socket = io.connect('http://simple-dashboard.loc:3000');
@@ -58,7 +66,13 @@
         },
         data() {
             socket.on('chat', (messages) => {
-                this.messages = messages.reverse();
+                messages['color'] = StringGenerate.toHex(messages['name']);
+                this.messages.push(messages);
+
+                setTimeout(() => {
+                    const chat = this.$el.querySelector('.chat');
+                    chat.scrollTo(0, chat.scrollHeight);
+                }, 500);
             });
             return {
                 message: '',
