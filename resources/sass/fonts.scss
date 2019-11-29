@@ -1,0 +1,42 @@
+
+// Nunito
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito Regular'), local('Nunito-Regular'), url('./fonts/Nunito-Regular.ttf'), url('../assets/fonts/Nunito-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Nunito Bold'), local('Nunito-Bold'), url('./fonts/Nunito-Bold.ttf'), url('../assets/fonts/Nunito-Bold.ttf') format('ttf');
+}
+
+// Roboto
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url('./fonts/Roboto-Regular.ttf'), url('../assets/fonts/Roboto-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('./fonts/Roboto-Bold.ttf'), url('../assets/fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+// Comfortaa
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Comfortaa Regular'), local('Comfortaa-Regular'), url('./fonts/Comfortaa-Regular.ttf'), url('../assets/fonts/Comfortaa-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Comfortaa Bold'), local('Comfortaa-Bold'), url('./fonts/Comfortaa-Bold.ttf'), url('../assets/fonts/Comfortaa-Bold.ttf') format('ttf');
+}

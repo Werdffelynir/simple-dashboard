@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nunito Regular"), local("Nunito-Regular"), url(/fonts/Nunito-Regular.ttf?e9f64790b131c08d6b34a9ecdc453876), url(/fonts/Nunito-Regular.ttf?e9f64790b131c08d6b34a9ecdc453876) format("ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito Bold"), local("Nunito-Bold"), url(/fonts/Nunito-Bold.ttf?a8c930b08cd5fda37ea9f1c105d1ac61), url(/fonts/Nunito-Bold.ttf?a8c930b08cd5fda37ea9f1c105d1ac61) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url(/fonts/Roboto-Regular.ttf?11eabca2251325cfc5589c9c6fb57b46), url(/fonts/Roboto-Regular.ttf?11eabca2251325cfc5589c9c6fb57b46) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(/fonts/Roboto-Bold.ttf?e07df86cef2e721115583d61d1fb68a6), url(/fonts/Roboto-Bold.ttf?e07df86cef2e721115583d61d1fb68a6) format("ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Comfortaa Regular"), local("Comfortaa-Regular"), url(/fonts/Comfortaa-Regular.ttf?8891f7fe67794205a7d34ce42c6e3f70), url(/fonts/Comfortaa-Regular.ttf?8891f7fe67794205a7d34ce42c6e3f70) format("ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Comfortaa Bold"), local("Comfortaa-Bold"), url(/fonts/Comfortaa-Bold.ttf?22e5f38dfe16119bc530442963b45bd1), url(/fonts/Comfortaa-Bold.ttf?22e5f38dfe16119bc530442963b45bd1) format("ttf");
+}
+
+.auth-form {
+  padding: 2%;
+}
+
+.auth-form > div {
+  padding: 15px;
+}
+
+.auth-form .logo {
+  font-family: "Nunito", "Roboto", sans-serif;
+}
+
+.auth-menu {
+  text-align: right;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nunito", "Roboto", sans-serif;
+  background-color: #303030;
+  color: #b9bbb7;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+.content-main {
+  padding-right: 15px;
+}
+
+.copy span {
+  color: orange;
+}
+
+.copy {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #595959;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIvY3NzL2FwcC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

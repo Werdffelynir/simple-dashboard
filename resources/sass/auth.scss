@@ -1,0 +1,16 @@
+@import "./variables";
+
+.auth-form {
+    padding: 2%;
+    > div {
+        padding: 15px;
+    }
+    .logo {
+        font-family: "Nunito", "Roboto", sans-serif;
+    }
+}
+
+.auth-menu {
+    text-align: right;
+}
+
