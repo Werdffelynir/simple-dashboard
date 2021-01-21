@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "js-cookie": "^2.2.1",
-        "socket.io": "^2.3.0",
+        "socket.io": "^2.4.0",
         "vue": "^2.6.10",
         "vue-avatar-editor": "^1.0.4",
         "vue-axios": "^2.1.4",
