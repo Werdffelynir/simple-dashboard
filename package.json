@@ -14,7 +14,7 @@
         "@mdi/font": "^4.4.95",
         "axios": "^0.19",
         "cross-env": "^5.1",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
         "resolve-url-loader": "^2.3.1",
